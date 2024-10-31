@@ -12,7 +12,7 @@ The table below displays batches with misalignments between NetSuite and settlem
 | JetBrainsAmericasUSD | 141          | 33037 transactions have missing batch number while mapping to netsuite                                                                  |-11,042,873 |
 | JetBrainsEUR         | 138          | 255 missinterpreted (Fee assinged as Gross)                                                                                             | -83,251 |
 | JetBrainsEUR         | 139          | 78 (return is not processed) - 3 missing transactions                                                                                   | 11,529 |
-| JetBrainsGBP         | 141          | 3031 transactions only mapped Account Receivable not the Deffered Receivables so there is missalingment between netsuite and settlement | 11,529 |
+| JetBrainsGBP         | 141          | 3031 transactions only mapped Account Receivable not the Deffered Receivables so there is missalingment between netsuite and settlement | -1,021,258 |
 
 #### JetBrainsAmericasUSD
 
