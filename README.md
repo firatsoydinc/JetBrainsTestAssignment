@@ -1,8 +1,18 @@
-## JetBrains Test Assignment 
+## JetBrains Test Assignment
 
 ### Task 1: Data quality – the difference between NetSuite ERP and payment gateway
 
-The settlements provided are for the Merchant Account, including JetBrainsAmericasUSD, JetBrainsEUR, JetBrainsGBP, and JetBrainsUSD. For these Merchant Accounts, there are five batches available: 138, 139, 140, 141, and 142.
+The settlements provided are for the Merchant Account, including JetBrainsAmericasUSD, JetBrainsEUR, JetBrainsGBP, and JetBrainsUSD. For these Merchant Accounts, there are five batches available: 138, 139, 140, 141, and 142. 
+
+The table below displays batches with misalignments between NetSuite and settlement, detailing the reasons and impacts of each mismatch.
+
+| Merchant_Account     | Batch_Number | Number_of_missinterpreted_transactions                                                                                                  | Impact |
+|----------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------|-|
+| JetBrainsAmericasUSD | 139          | 33639 transactions have missing batch number while mapping to netsuite                                                                  | -11,255,775|
+| JetBrainsAmericasUSD | 141          | 33037 transactions have missing batch number while mapping to netsuite                                                                  |-11,042,873 |
+| JetBrainsEUR         | 138          | 255 missinterpreted (Fee assinged as Gross)                                                                                             | -83,251 |
+| JetBrainsEUR         | 139          | 78 (return is not processed) - 3 missing transactions                                                                                   | 11,529 |
+| JetBrainsGBP         | 141          | 3031 transactions only mapped Account Receivable not the Deffered Receivables so there is missalingment between netsuite and settlement | 11,529 |
 
 #### JetBrainsAmericasUSD
 
@@ -48,6 +58,7 @@ When the sales in 2018 and 2019 compared with each other by regions ROW has -4,6
 USD while US has -142,896 USD change in first six months. When started deeply looking in
 ROW region there are 8 countries in total which are using USD 4 of them, EUR 3 of them
 and GBP. To investigation shows:
+
 
 **•** The USD-based countries revealed a decrease of 96,738 USD in revenue, attributed to a similar quantity sold but a higher proportion of cheaper items compared to more  expensive ones.
 
